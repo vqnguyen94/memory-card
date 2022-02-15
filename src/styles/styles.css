@@ -1,0 +1,39 @@
+.scoreboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animals-container {
+  font-size: 5em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.animals {
+  justify-self: center;
+  align-items: center;
+  padding: 0.5em;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.animals:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .animals-container {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
