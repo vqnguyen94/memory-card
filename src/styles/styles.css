@@ -39,7 +39,7 @@
 }
 
 /* Portrait */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
   .animals-container {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -52,7 +52,7 @@
 }
 
 /* Landscape */
-@media only screen and (max-height: 375px) {
+@media only screen and (max-height: 450px) {
   h2 {
     font-size: 0.8em;
   }
