@@ -10,14 +10,20 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
+  /* justify-self: center;
+  align-items: center; */
+  /* background: blue; */
 }
 
 .animals {
-  justify-self: center;
-  align-items: center;
   padding: 0.5em;
   transition: transform 0.2s;
   cursor: pointer;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  /* background: red; */
+  /* border: solid 1px black; */
 }
 
 .animals:hover {
@@ -29,11 +35,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+/* Portrait */
+@media only screen and (max-width: 375px) {
   .animals-container {
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2.1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
+
+/* Landscape */
+@media only screen and (max-height: 375px) {
+  h2 {
+    font-size: 0.8em;
+  }
+
+  .animals-container {
+    font-size: 2em;
+  }
+
+  .instructions {
+    font-size: 0.8em;
   }
 }
