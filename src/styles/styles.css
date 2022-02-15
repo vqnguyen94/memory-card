@@ -38,6 +38,11 @@
   text-align: center;
 }
 
+#portrait,
+#landscape {
+  display: none;
+}
+
 /* Portrait */
 @media only screen and (max-width: 450px) {
   .animals-container {
@@ -48,6 +53,10 @@
 
   h2 {
     font-size: 1em;
+  }
+
+  #portrait {
+    display: block;
   }
 }
 
@@ -63,5 +72,9 @@
 
   .instructions {
     font-size: 0.8em;
+  }
+
+  #landscape {
+    display: block;
   }
 }
